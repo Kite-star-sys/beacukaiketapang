@@ -1,0 +1,673 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+body{
+    font-family: 'Anek Bangla', sans-serif;
+    @apply
+    bg-slate-100
+}
+.smooth-shadow{
+   /* https://smoothshadows.com/#djEsMSw1LDAuMDIsNDcsMzIsMCwjMDMwNzEyLCNmM2Y0ZjYsI2ZmZmZmZiwy */
+box-shadow: 0px 1px 2px rgba(3, 7, 18, 0.00),
+0px 5px 8px rgba(3, 7, 18, 0.01),
+0px 12px 17px rgba(3, 7, 18, 0.01),
+0px 20px 30px rgba(3, 7, 18, 0.02),
+0px 32px 47px rgba(3, 7, 18, 0.02);
+
+
+}
+.main-header {
+    @apply
+    bg-white
+    border-b-[0.05rem]
+    border-b-slate-200
+    fixed
+    top-0
+    left-0
+    right-0
+    z-10
+}
+.main-header .header-top {
+    @apply
+    flex
+    items-center
+    justify-between
+    px-[1rem]
+    lg:px-[2rem]
+    lg:py-[0.7rem]
+    bg-indigo-600
+
+}
+.main-header .header-top .logo {
+    @apply
+    flex
+    items-center
+    justify-center
+
+}
+.main-header .header-top .logo .logo-lg{
+    @apply
+    hidden
+    lg:block
+}
+.main-header .header-top .logo .logo-sm{
+    @apply
+    block
+    lg:hidden
+    w-10
+    mx-4
+    my-2
+}
+.main-header .header-top .top-menu {
+    @apply
+    flex
+    items-center
+}
+.main-header .header-top .top-menu li .menu-item {
+    @apply
+    relative
+    flex
+    items-center
+    justify-center
+    space-x-3
+    px-4
+    py-2
+    hover:bg-indigo-700
+    rounded-md
+    text-slate-300
+    hover:text-white
+    focus:text-white
+}
+.main-header .header-top .top-menu li .menu-item.nav-top-toggle-menu{
+    @apply
+    flex
+    lg:hidden
+}
+.main-header .header-top .top-menu li .menu-item img {
+    @apply
+    w-[2rem]
+    h-[2rem]
+    rounded-full
+}
+.main-header .header-top .top-menu li .menu-item .menu-item-text{
+    @apply
+    flex
+    flex-col
+}
+.main-header .header-top .top-menu li .menu-item .menu-item-text .name{
+    @apply
+    text-sm
+    font-semibold
+
+}
+.main-header .header-top .top-menu li .menu-item .menu-item-text .email{
+    @apply
+    text-xs
+}
+.main-header .header-top .top-menu li .menu-item .budge{
+    @apply
+    absolute
+    top-2
+    right-2
+    h-[10px]
+    w-[10px]
+    rounded-full
+    bg-green-500
+    text-white
+    animate-ping
+}
+
+.main-header .header-bottom{
+    @apply
+    hidden
+    lg:block
+    lg:px-[2rem]
+}
+.open-menu .main-header .header-bottom{
+    @apply
+    block
+}
+.main-header .header-bottom .bottom-menu{
+    @apply
+    flex
+    flex-col
+    lg:flex-row
+    items-start
+    lg:items-center
+    h-auto
+    lg:h-14
+    w-full
+    p-4
+    lg:p-0
+}
+.main-header .header-bottom .bottom-menu  .menu-item{
+    @apply
+    w-full
+    lg:w-auto
+
+}
+.main-header .header-bottom .bottom-menu  .menu-item a{
+    @apply
+    flex
+    items-start
+    lg:items-center
+    lg:justify-center
+    w-full
+    px-4
+    py-2
+    h-auto
+    lg:h-14
+    hover:bg-slate-50
+    focus:bg-slate-50
+    hover:text-indigo-500
+    focus:text-indigo-500
+    space-x-3
+    relative
+    overflow-x-hidden
+    after:content-['']
+    after:absolute
+    after:bottom-0
+    after:-left-full
+    after:h-[2px]
+    after:w-full
+    after:bg-indigo-600
+    hover:after:left-0
+    after:transition-all
+    after:duration-300
+    after:ease-linear
+}
+.main-header .header-bottom .bottom-menu  .menu-item.active a{
+    @apply
+    text-indigo-500
+    after:content-['']
+    after:absolute
+    after:bottom-0
+    after:left-0
+    after:h-[2px]
+    after:w-full
+    after:bg-indigo-600
+
+}
+.dropdown-notif{
+    @apply
+    bg-white
+    border-0
+    rounded-[4px]
+    shadow-lg
+    min-w-[250px]
+}
+.dropdown-notif .header{
+    @apply
+    flex
+    items-center
+    justify-between
+    px-4
+    py-2
+    border-b-[0.05rem]
+    border-b-slate-200
+}
+.dropdown-notif .header h2{
+    @apply
+    text-sm
+    font-semibold
+    text-gray-700
+}
+.dropdown-notif .header .budge{
+    @apply
+    h-5
+    w-5
+    rounded-full
+    bg-green-500
+    text-white
+    text-[10px]
+    flex
+    items-center
+    justify-center
+    font-bold
+}
+.dropdown-notif .body a{
+    @apply
+    flex
+    items-center
+    px-1.5
+    py-2
+    hover:bg-slate-50
+    focus:bg-slate-50
+    space-x-3
+}
+.dropdown-notif .body a .notif-icons{
+    @apply
+    min-w-[50px]
+    max-w-[50px]
+}
+.dropdown-notif .body a .notif-icons i{
+    @apply
+    flex
+    items-center
+    justify-center
+    h-[50px]
+    w-[50px]
+    rounded-full
+    text-base
+    text-white
+    bg-indigo-200
+}
+.dropdown-notif .body a .notif-content{
+    @apply
+    min-w-[clac(100%_-_50px)]
+    max-w-[clac(100%_-_50px)]
+    flex
+    flex-col
+}
+.dropdown-notif .body a .notif-content .notif-top{
+    @apply
+    flex
+    items-center
+    justify-between
+}
+.dropdown-notif .body a .notif-content .notif-top .name{
+    @apply
+    text-sm
+    font-medium
+    text-gray-600
+}
+.dropdown-notif .body a .notif-content .notif-top .time{
+    @apply
+    text-[11px]
+    text-gray-500
+}
+.dropdown-notif .body a .notif-content .notif-bottom{
+    @apply
+    flex
+    items-center
+    justify-between
+    mt-3
+}
+.dropdown-notif .body a .notif-content .notif-bottom p{
+    @apply
+    text-[13px]
+    text-gray-600
+    font-normal
+}
+
+section.content{
+    @apply
+    pt-[4rem]
+    lg:pt-[10rem]
+    lg:px-[2rem]
+}
+
+/* Modal */
+.modal-delete{
+    @apply
+    max-w-[25rem]
+}
+.modal-delete .modal-content{
+    @apply
+    p-8
+}
+.modal-delete-body{
+    @apply
+    flex
+    flex-col
+    items-center
+    justify-center
+    p-4
+}
+.modal-delete-body i{
+    @apply
+    text-5xl
+    text-red-500
+    mb-3
+}
+.modal-delete-body h4{
+    @apply
+    text-xl
+    font-semibold
+    text-gray-700
+}
+.modal-delete-body p{
+    @apply
+    text-sm
+    font-medium
+    text-gray-500
+    text-center
+}
+.modal-delete-footer{
+    @apply
+    flex
+    items-center
+    justify-center
+    space-x-1
+    px-4
+    py-2
+}
+.modal-delete-footer .btn-hapus{
+    @apply
+    px-3
+    py-2
+    font-medium
+    text-xs
+    rounded-[4px]
+    bg-red-500
+    text-white
+    hover:bg-red-600
+    focus:bg-red-600
+    focus:ring-red-500
+    disabled:bg-red-500
+    disabled:hover:bg-red-500
+    disabled:focus:bg-red-500
+    disabled:focus:ring-red-500
+}
+.modal-delete-footer .btn-cancel{
+    @apply
+    px-3
+    py-2
+    font-medium
+    text-xs
+    rounded-[4px]
+    bg-slate-500
+    text-white
+    hover:bg-slate-600
+    focus:bg-slate-600
+    focus:ring-slate-500
+    disabled:bg-slate-500
+    disabled:hover:bg-slate-500
+    disabled:focus:bg-slate-500
+    disabled:focus:ring-slate-500
+}
+
+/* Btn */
+.btn{
+    @apply
+    px-3
+    py-2
+    text-sm
+    border-0
+    hover:border-0
+    focus:border-0
+    inline-flex
+    items-center
+    justify-center
+    space-x-1
+}
+.btn-success{
+    @apply
+    bg-emerald-500
+    text-white
+    hover:bg-emerald-600
+    focus:bg-emerald-600
+    active:bg-emerald-700
+    disabled:bg-emerald-500
+    disabled:text-gray-500
+}
+.btn-warning{
+    @apply
+    bg-yellow-500
+    hover:bg-yellow-600
+    focus:bg-yellow-600
+    active:bg-yellow-700
+    disabled:bg-yellow-500
+    disabled:text-gray-500
+    hover:text-gray-600
+    focus:text-gray-600
+    active:text-gray-700
+}
+.btn-primary{
+    @apply
+    bg-indigo-500
+    text-white
+    hover:bg-indigo-600
+    focus:bg-indigo-600
+    active:bg-indigo-700
+    disabled:bg-indigo-500
+    disabled:text-gray-500
+}
+.btn-danger{
+    @apply
+    bg-red-500
+    text-white
+    hover:bg-red-600
+    focus:bg-red-600
+    active:bg-red-700
+    disabled:bg-red-500
+    disabled:text-gray-500
+}
+
+.card{
+    @apply
+    bg-white
+    border-0
+    rounded-[4px]
+    mb-6
+}
+.card .card-header{
+    @apply
+    flex
+    items-center
+    justify-between
+    px-4
+    py-2
+    border-b-[0.05rem]
+    border-b-slate-200
+    bg-white
+}
+.card .card-header .card-title{
+    @apply
+    text-[1.5rem]
+    font-medium
+    text-gray-700
+    uppercase
+    inline-block
+    p-0
+    m-0
+}
+
+/* Form controll */
+.form-control,
+.form-select{
+    @apply
+    bg-white
+    outline-0
+    border-[1.6px]
+    border-slate-300
+    rounded-[4px]
+    px-4
+    py-[0.5rem]
+    hover:border-indigo-500
+    focus:border-indigo-500
+    text-sm
+    focus:shadow-none
+    placeholder:text-gray-400
+
+}
+/* Data table */
+.table thead{
+    @apply
+    bg-red-300
+}
+.table thead tr th{
+    @apply
+    text-sm
+    font-bold
+    text-gray-700
+    uppercase
+    px-4
+    py-1.5
+
+}
+.table tbody tr td{
+    @apply
+    text-sm
+    font-normal
+    text-gray-500
+}
+
+/* Sweet alert */
+.modal-delete-body .modal-icons-success{
+    @apply
+    text-green-500
+}
+
+
+/* Login */
+.login-screen{
+    @apply
+    bg-slate-100
+    min-h-screen
+    w-full
+    flex
+    items-center
+    justify-center
+    overflow-x-hidden
+    py-[3rem]
+    bg-[url('../img/bg.jpg')]
+    bg-cover
+    bg-no-repeat
+    relative
+    after:content-['']
+    after:absolute
+    after:top-0
+    after:left-0
+    after:h-full
+    after:w-full
+    after:bg-black
+    after:opacity-50
+}
+.login-screen .form{
+    @apply
+    bg-white/70
+    shadow-md
+    p-8
+    rounded-[4px]
+    relative
+    z-10
+}
+.login-screen .form .form-header{
+    @apply
+    flex
+    justify-center
+    items-center
+    mb-8
+}
+.login-screen .form form{
+    @apply
+    grid
+    grid-cols-1
+    gap-6
+}
+.form-group-login{
+    @apply
+    relative
+    flex
+    flex-col
+}
+.form-group-login .form-group-icons{
+    @apply
+    absolute
+    top-0
+    left-0
+    h-full
+    w-10
+    flex
+    items-center
+    justify-center
+    z-10
+    text-slate-400
+}
+.form-group-login .show-password{
+    @apply
+    absolute
+    top-0
+    right-0
+    h-full
+    w-10
+    flex
+    items-center
+    justify-center
+    z-10
+    text-slate-400
+    cursor-pointer
+    hover:text-indigo-500
+}
+.form-group-login .form-control{
+    @apply
+    relative
+    px-10
+}
+.form-group-login .is-invalid{
+    @apply
+    border-red-500
+    focus:shadow-none
+}
+.form-group-login .is-invalid ~ .show-password{
+    @apply
+    right-4
+}
+.form-group-login .text-error{
+    @apply
+    text-red-500
+    text-sm
+    mt-1
+    block
+    absolute
+    -bottom-[1.4rem]
+    right-0
+    p-0
+    m-0
+}
+.form .form-footer{
+    @apply
+    flex
+    justify-center
+    items-center
+    mt-8
+    space-x-2
+}
+.form .form-footer a{
+    @apply
+    text-base
+    font-medium
+    text-gray-500
+    text-center
+}
+.form .form-footer a span{
+    @apply
+    text-indigo-500
+    inline-block
+    hover:underline
+    focus:underline
+}
+
+.btn-view-file{
+    @apply
+    inline-flex
+    items-center
+    text-center
+    text-white
+    space-x-1
+    bg-red-400
+    hover:bg-red-500
+    focus:bg-red-500
+    rounded-md
+    text-sm
+    pr-3
+    transition-all
+    duration-300
+    ease-linear
+}
+.btn-view-file i{
+    @apply
+    flex
+    items-center
+    justify-center
+    bg-red-500
+    p-2
+    rounded-md
+}
+
+
+
+
