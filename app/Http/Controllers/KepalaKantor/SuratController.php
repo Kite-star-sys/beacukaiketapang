@@ -1,6 +1,6 @@
 <?php
 
-namespace App\Http\Controllers\Staf;
+namespace App\Http\Controllers\KepalaKantor;
 
 use App\Http\Controllers\Controller;
 use Illuminate\Support\Facades\Auth;
@@ -14,7 +14,7 @@ use App\Models\Persyaratan;
 use App\Models\Tracking;
 
 
-class PengajuanController extends Controller
+class SuratController extends Controller
 {
     function index(){
 
@@ -26,12 +26,12 @@ class PengajuanController extends Controller
 
         $user = Auth::guard('admin')->user();
         $data['user'] = Admin::where('id','!=' ,$user->id)->get();
-        return view('staf.pengajuan.index', $data);
+        return view('kepala_kantor.surat.index', $data);
     }
     function create(){
         $data['instansi'] = Instansi::all();
         $data['layanan'] = Layanan::all();
-        return view('staf.pengajuan.create', $data);
+        return view('kepala_kantor.surat.create', $data);
     }
     function store(Request $request){
         $request->validate(Pengajuan::$field, Pengajuan::$pesan);
@@ -175,6 +175,6 @@ class PengajuanController extends Controller
                         })
                         ->first();
         // return $data;
-        return view('staf.pengajuan.show',$data);
+        return view('kepala_kantor.surat.show',$data);
     }
 }

@@ -1,4 +1,4 @@
-<x-layout_staf.app>
+<x-layout_kk.app>
     <style>
         .PSPDFKit-6fq5ysqkmc2gc1fek9b659qfh8{
             display: none !important
@@ -102,4 +102,4 @@
         });
     </script>
     @endpush
-</x-layout_staf.app>
+</x-layout_kk.app>

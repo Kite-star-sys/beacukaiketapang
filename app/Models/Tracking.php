@@ -48,6 +48,13 @@ class Tracking extends Model
         return $this->belongsTo(Admin::class, 'id_penerima', 'id');
     }
 
+    function waktu(){
+        $now = $this->created_at;
+        $tgl = $now->isoFormat('D MMMM YYYY');
+        $jam = $now->isoFormat('HH:mm:ss');
+        return $tgl.','.$jam;
+    }
+
     protected $hidden = [
         'created_at',
         'updated_at',

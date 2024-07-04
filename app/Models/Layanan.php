@@ -27,6 +27,10 @@ class Layanan extends Model
         'ket_layanan.required' => 'Data tidak boleh kosong !',
     ];
 
+    function persyaratan(){
+        return $this->hasMany(Persyaratan::class,'id_layanan', 'id');
+    }
+
     function pendukung(){
         return $this->hasMany(Persyaratan::class,'id_layanan', 'id');
     }

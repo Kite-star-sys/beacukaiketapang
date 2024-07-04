@@ -2,6 +2,15 @@
 
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\AuthController;
+use Illuminate\Support\Facades\Artisan;
+
+Route::get('/clear-cache', function() {
+
+    $view = Artisan::call('view:clear');
+    $cache = Artisan::call('cache:clear');
+    $config = Artisan::call('config:clear');
+    echo "Cache cleared. \r\n";
+});
 
 Route::controller(AuthController::class)->group(function () {
     Route::get('/', 'index')->name('login');
