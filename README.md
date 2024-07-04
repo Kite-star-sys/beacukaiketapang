@@ -1,66 +1,77 @@
-<p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400" alt="Laravel Logo"></a></p>
-
 <p align="center">
-<a href="https://github.com/laravel/framework/actions"><img src="https://github.com/laravel/framework/workflows/tests/badge.svg" alt="Build Status"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/dt/laravel/framework" alt="Total Downloads"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/v/laravel/framework" alt="Latest Stable Version"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/l/laravel/framework" alt="License"></a>
+  <a href="https://laravel.com" target="_blank">
+    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/36/Logo.min.svg/264px-Logo.min.svg.png?20200603074624" width="230" height="60" alt="Logo Laravel">
+  </a>
+   <a href="https://tailwindcss.com/" target="_blank">
+    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSSiVktKrzcHojVaJE3gL1i2IB71ETLIu-xlQ&s" width="300" height="40" alt="Logo Laravel">
+  </a>
 </p>
 
-## About Laravel
+<p align="center">
+  <a href="https://github.com/laravel/framework/actions">
+    <img src="https://github.com/laravel/framework/workflows/tests/badge.svg" alt="Status Build">
+  </a>
+  <a href="https://packagist.org/packages/laravel/framework">
+    <img src="https://img.shields.io/packagist/dt/laravel/framework" alt="Total Unduhan">
+  </a>
+  <a href="https://packagist.org/packages/laravel/framework">
+    <img src="https://img.shields.io/packagist/v/laravel/framework" alt="Versi Stabil Terbaru">
+  </a>
+  <a href="https://packagist.org/packages/laravel/framework">
+    <img src="https://img.shields.io/packagist/l/laravel/framework" alt="Lisensi">
+  </a>
+</p>
 
-Laravel is a web application framework with expressive, elegant syntax. We believe development must be an enjoyable and creative experience to be truly fulfilling. Laravel takes the pain out of development by easing common tasks used in many web projects, such as:
 
-- [Simple, fast routing engine](https://laravel.com/docs/routing).
-- [Powerful dependency injection container](https://laravel.com/docs/container).
-- Multiple back-ends for [session](https://laravel.com/docs/session) and [cache](https://laravel.com/docs/cache) storage.
-- Expressive, intuitive [database ORM](https://laravel.com/docs/eloquent).
-- Database agnostic [schema migrations](https://laravel.com/docs/migrations).
-- [Robust background job processing](https://laravel.com/docs/queues).
-- [Real-time event broadcasting](https://laravel.com/docs/broadcasting).
 
-Laravel is accessible, powerful, and provides tools required for large, robust applications.
+## Tentang Laravel dan Tailwind CSS
 
-## Learning Laravel
+[Laravel](https://laravel.com) adalah kerangka kerja aplikasi web dengan sintaks yang ekspresif dan elegan. Kami percaya pengembangan harus menjadi pengalaman yang menyenangkan dan kreatif untuk benar-benar memuaskan. Laravel menghilangkan rasa sakit dalam pengembangan dengan memudahkan tugas-tugas umum yang digunakan dalam banyak proyek web.
 
-Laravel has the most extensive and thorough [documentation](https://laravel.com/docs) and video tutorial library of all modern web application frameworks, making it a breeze to get started with the framework.
+[Tailwind CSS](https://tailwindcss.com) adalah kerangka kerja CSS utilitas untuk membangun antarmuka pengguna kustom dengan cepat. Ini menyediakan kelas utilitas tingkat rendah yang memungkinkan Anda membangun desain kustom sepenuhnya tanpa pernah meninggalkan HTML Anda.
 
-You may also try the [Laravel Bootcamp](https://bootcamp.laravel.com), where you will be guided through building a modern Laravel application from scratch.
+### Fitur-Fitur Laravel
 
-If you don't feel like reading, [Laracasts](https://laracasts.com) can help. Laracasts contains thousands of video tutorials on a range of topics including Laravel, modern PHP, unit testing, and JavaScript. Boost your skills by digging into our comprehensive video library.
+- [Mesin routing sederhana dan cepat](https://laravel.com/docs/routing).
+- [Wadah injeksi dependensi yang kuat](https://laravel.com/docs/container).
+- Beberapa backend untuk [sesi](https://laravel.com/docs/session) dan penyimpanan [cache](https://laravel.com/docs/cache).
+- ORM database [ekspresif dan intuitif](https://laravel.com/docs/eloquent).
+- Migrasi skema database [agnostik](https://laravel.com/docs/migrations).
+- [Pengolahan pekerjaan latar belakang](https://laravel.com/docs/queues) yang kuat.
+- [Penyiaran acara real-time](https://laravel.com/docs/broadcasting).
 
-## Laravel Sponsors
+### Kelebihan Tailwind CSS
 
-We would like to extend our thanks to the following sponsors for funding Laravel development. If you are interested in becoming a sponsor, please visit the [Laravel Partners program](https://partners.laravel.com).
+- Bangun desain kustom dengan cepat dengan kelas utilitas.
+- Tidak perlu menulis CSS kustom.
+- Mudah menyesuaikan desain dengan opsi konfigurasi.
 
-### Premium Partners
+## Sumber Belajar
 
-- **[Vehikl](https://vehikl.com/)**
-- **[Tighten Co.](https://tighten.co)**
-- **[WebReinvent](https://webreinvent.com/)**
-- **[Kirschbaum Development Group](https://kirschbaumdevelopment.com)**
-- **[64 Robots](https://64robots.com)**
-- **[Curotec](https://www.curotec.com/services/technologies/laravel/)**
-- **[Cyber-Duck](https://cyber-duck.co.uk)**
-- **[DevSquad](https://devsquad.com/hire-laravel-developers)**
-- **[Jump24](https://jump24.co.uk)**
-- **[Redberry](https://redberry.international/laravel/)**
-- **[Active Logic](https://activelogic.com)**
-- **[byte5](https://byte5.de)**
-- **[OP.GG](https://op.gg)**
+- **Dokumentasi Laravel**: Dokumentasi [terluas dan mendalam](https://laravel.com/docs) serta perpustakaan tutorial video dari semua kerangka kerja aplikasi web modern.
+- **Dokumentasi Tailwind CSS**: Dokumentasi [komprehensif](https://tailwindcss.com/docs) untuk memulai dengan Tailwind CSS.
 
-## Contributing
+## Kontribusi
 
-Thank you for considering contributing to the Laravel framework! The contribution guide can be found in the [Laravel documentation](https://laravel.com/docs/contributions).
+Terima kasih telah mempertimbangkan untuk berkontribusi pada kerangka kerja Laravel dan Tailwind CSS! Panduan kontribusi dapat ditemukan di dokumentasi masing-masing:
 
-## Code of Conduct
+- [Panduan Kontribusi Laravel](https://laravel.com/docs/contributions)
+- [Panduan Kontribusi Tailwind CSS](https://github.com/tailwindlabs/tailwindcss/blob/master/CONTRIBUTING.md)
 
-In order to ensure that the Laravel community is welcoming to all, please review and abide by the [Code of Conduct](https://laravel.com/docs/contributions#code-of-conduct).
+## Kode Etik
 
-## Security Vulnerabilities
+Harap tinjau dan patuhi Kode Etik masing-masing untuk Laravel dan Tailwind CSS:
 
-If you discover a security vulnerability within Laravel, please send an e-mail to Taylor Otwell via [taylor@laravel.com](mailto:taylor@laravel.com). All security vulnerabilities will be promptly addressed.
+- [Kode Etik Laravel](https://laravel.com/docs/contributions#code-of-conduct)
+- [Kode Etik Tailwind CSS](https://github.com/tailwindlabs/tailwindcss/blob/master/CODE_OF_CONDUCT.md)
 
-## License
+## Kerentanan Keamanan
 
-The Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
+Jika Anda menemukan kerentanan keamanan dalam Laravel, silakan kirim email ke Taylor Otwell melalui [taylor@laravel.com](mailto:taylor@laravel.com). Semua kerentanan keamanan akan segera ditangani.
+
+Untuk kerentanan keamanan terkait Tailwind CSS, silakan ikuti proses pengungkapan yang bertanggung jawab yang dijelaskan di dokumentasinya.
+
+## Lisensi
+
+- Laravel adalah perangkat lunak open-source yang dilisensikan di bawah [lisensi MIT](https://opensource.org/licenses/MIT).
+- Tailwind CSS adalah perangkat lunak open-source yang dilisensikan di bawah [lisensi MIT](https://opensource.org/licenses/MIT).
